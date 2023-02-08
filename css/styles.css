@@ -1,0 +1,239 @@
+/* LAYOUT */
+.main {
+  position: relative;
+
+  width: 100rem;
+  height: 60rem;
+  border-radius: 8px;
+  display: flex;
+
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  -webkit-backdrop-filter: blur(200px);
+  box-shadow: 0 3rem 5rem rgb(0 0 0 / 25%);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.box {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+/* ELEMENTS */
+
+.player-name {
+  font-size: 4rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-bottom: 1rem;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: var(--color-pink-500);
+  margin-bottom: auto;
+}
+
+.current-score-box {
+  opacity: 0.8;
+  color: #fff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 9px;
+  background-color: var(--color-pink-500);
+  transition: all 0.75s;
+}
+
+.current-score-text {
+  color: #ddd;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.current-score {
+  font-size: 3.5rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.buttons {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 19rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  color: #444;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: inherit;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgb(0 0 0 / 10%);
+}
+
+.btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.btn:hover {
+  background-color: rgba(238, 238, 238, 0.6);
+}
+
+.btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn--new {
+  position: absolute;
+  top: 4rem;
+}
+
+.img {
+  position: absolute;
+  top: 16.5rem;
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgb(0 0 0 / 20%);
+}
+
+.btn--roll {
+  position: absolute;
+  top: 39.3rem;
+}
+
+.btn--hold {
+  position: absolute;
+  top: 46.1rem;
+}
+
+/* OVERLAY */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(71, 84, 103, 0.3);
+  display: none;
+  z-index: 1;
+}
+
+.modal {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64rem;
+  text-align: center;
+  border-radius: 9px;
+  padding: 1.6rem;
+
+  background-image: linear-gradient(to top left, #753682 20%, #bf2e34 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  color: var(--color-black-300);
+  display: none;
+  z-index: 2;
+}
+
+.modal h2 {
+  font-size: 3.4rem;
+  font-weight: bold;
+  margin: 0.8rem 0;
+}
+
+.form-control {
+  margin: 0.8rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-grey-300);
+}
+
+.form-control input {
+  width: 26rem;
+  padding: 0.56rem;
+  border-radius: 6px;
+  font-size: 2rem;
+  color: var(--color-grey-700);
+  border: 1px solid var(--color-grey-300);
+}
+
+.form-control input:focus {
+  border: 0.1rem solid var(--color-primary-300);
+  outline: 0.4rem solid var(--color-primary-100);
+}
+
+input::placeholder {
+  font-weight: 400;
+  color: var(--color-grey-300);
+}
+
+input:hover::-webkit-input-placeholder {
+  color: var(--color-grey-400);
+}
+
+input:focus::-webkit-input-placeholder {
+  color: var(--color-grey-300);
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.form-btn .btn {
+  padding: 1.1rem 2.5rem;
+}
+
+.form-btn .btn::first-letter {
+  font-size: 1.8rem;
+  display: inline;
+  margin-right: 0;
+}
+
+/* ///// */

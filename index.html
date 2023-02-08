@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link
+      rel="shortcut icon"
+      href="/img/icons8-rolling-dice-color-96.png"
+      type="image/x-icon"
+    />
+    <script defer src="js/config.js"></script>
+    <script defer src="js/app.js"></script>
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <!-- MODAL -->
+    <aside class="modal">
+      <h2>Choose your name</h2>
+      <form class="form">
+        <div class="form-control">
+          <label for="playername">Player name</label>
+          <input
+            type="text"
+            name="playername"
+            id="playername"
+            required
+            placeholder="Enter player name"
+          />
+        </div>
+        <div class="form-btn">
+          <button type="reset" class="btn" id="cancel-btn">Cancel</button>
+          <button type="submit" class="btn btn-full" id="confirm-btn">
+            Confirm
+          </button>
+        </div>
+      </form>
+    </aside>
+    <main class="main">
+      <section class="box player--0 player--active">
+        <button class="player-name" id="name--0" data-playerid="0">
+          Player 1
+        </button>
+        <p class="score" id="score--0">0</p>
+        <div class="current-score-box">
+          <h3 class="current-score-text">Current</h3>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="box player--1">
+        <button class="player-name" id="name--1" data-playerid="1">
+          Player 2
+        </button>
+        <p class="score" id="score--1">0</p>
+        <div class="current-score-box">
+          <h3 class="current-score-text">Current</h3>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+      <div class="buttons">
+        <button class="btn--new btn">🔄 New Game</button>
+        <img class="img dice hidden" src="/img/dice-5.png" alt="dice" />
+        <button class="btn--roll btn">🎲 Roll Dice</button>
+        <button class="btn--hold btn">📥 Hold</button>
+      </div>
+    </main>
+  </body>
+</html>

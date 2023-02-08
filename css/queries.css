@@ -1,0 +1,123 @@
+/* ************************************ */
+/* BELOW 864px */
+/* ************************************ */
+
+@media (max-width: 54em) {
+  html {
+    font-size: 56%;
+  }
+  .box {
+    padding: 9rem 7rem;
+  }
+}
+
+/* ************************************ */
+/* BELOW 688px */
+/* ************************************ */
+
+@media (max-width: 43em) {
+  .box {
+    padding: 9rem 5rem;
+  }
+
+  .player-name {
+    font-size: 3rem;
+  }
+
+  .score {
+    font-size: 5rem;
+  }
+
+  .current-score-box {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .buttons .btn {
+    font-size: 1.6rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .img {
+    height: 8rem;
+  }
+
+  .modal {
+    max-width: 60%;
+  }
+
+  .modal h2 {
+    font-size: 2.4rem;
+  }
+
+  .form-control label {
+    font-size: 1.5rem;
+  }
+
+  .form-btn .btn {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* ************************************ */
+/* BELOW 568px */
+/* ************************************ */
+@media (max-width: 35.5em) {
+  html {
+    font-size: 52%;
+  }
+
+  .box {
+    padding: 9rem 4rem;
+  }
+
+  .player-name {
+    font-size: 2.5rem;
+  }
+
+  .current-score-box {
+    width: 60%;
+  }
+
+  .current-score {
+    font-size: 2.5rem;
+  }
+
+  .player--0 .current-score-box {
+    margin-right: auto;
+  }
+
+  .player--1 .current-score-box {
+    margin-left: auto;
+  }
+}
+
+/* ************************************ */
+/* BELOW 400px */
+/* ************************************ */
+@media (max-width: 25em) {
+  .box {
+    padding: 9rem 2rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.2rem;
+  }
+
+  .modal h2 {
+    font-size: 2rem;
+  }
+
+  .form-control label {
+    font-size: 1.3rem;
+  }
+
+  .form-control input {
+    width: 90%;
+  }
+}
